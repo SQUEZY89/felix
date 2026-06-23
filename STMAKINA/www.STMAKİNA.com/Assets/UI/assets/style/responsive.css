@@ -1,0 +1,295 @@
+/* ============================================
+   ST MAKİNA - RESPONSIVE STYLES
+   Breakpoints:
+   - Mobile (≤576px)
+   - Tablet (577-991px)
+   - Desktop (992-1399px)
+   - Large Desktop (≥1400px)
+   ============================================ */
+
+
+/* ============ ÇOK BÜYÜK EKRAN (≥1400px) ============ */
+@media (min-width: 1400px) {
+    .box-banner {
+        min-height: 600px;
+    }
+    .carousel-video {
+        max-height: 80vh;
+    }
+    .slider-card {
+        width: 30%;
+        max-width: 520px;
+        right: 6%;
+        padding: 2rem 2.5rem;
+    }
+    .slider-card-title {
+        font-size: 1.8rem;
+    }
+    .slider-card-text {
+        font-size: 1rem;
+    }
+}
+
+
+/* ============ MASAÜSTÜ (992-1399px) ============ */
+@media (max-width: 1399.98px) and (min-width: 992px) {
+    .box-banner {
+        min-height: 480px;
+    }
+    .slider-card {
+        width: 34%;
+        right: 4%;
+        padding: 1.5rem 1.8rem;
+    }
+}
+
+
+/* ============ TABLET (768-991px) ============ */
+@media (max-width: 991.98px) and (min-width: 768px) {
+    .box-banner {
+        min-height: 400px;
+    }
+    .carousel-video {
+        max-height: 55vh;
+    }
+    .slider-card {
+        width: 60%;
+        max-width: 400px;
+        right: 4%;
+        left: auto;
+        top: auto;
+        bottom: 5%;
+        transform: none;
+        padding: 1.2rem 1.5rem;
+    }
+    .slider-card-title {
+        font-size: 1.4rem;
+    }
+    .slider-card-text {
+        font-size: 0.9rem;
+    }
+    .home-show-room {
+        width: 90% !important;
+    }
+    .show-room-btn {
+        left: 0 !important;
+        padding: 1rem 2rem !important;
+    }
+}
+
+
+/* ============ KÜÇÜK TABLET (576-767px) ============ */
+@media (max-width: 767.98px) and (min-width: 576px) {
+    ._navbar {
+        display: none;
+    }
+    .responsive-navbar {
+        display: block;
+    }
+    .box-banner {
+        min-height: 320px;
+    }
+    .carousel-video {
+        max-height: 45vh;
+    }
+    .slider-card {
+        width: 90%;
+        max-width: 100%;
+        right: 5%;
+        left: 5%;
+        top: auto;
+        bottom: 4%;
+        transform: none;
+        padding: 1rem 1.2rem;
+    }
+    .slider-card-title {
+        font-size: 1.2rem;
+    }
+    .slider-card-text {
+        font-size: 0.85rem;
+    }
+    .home-show-room {
+        width: 92% !important;
+    }
+    .info {
+        width: 90%;
+    }
+    .torna-title {
+        font-size: 1.5rem;
+    }
+    .show-room-btn {
+        left: 0 !important;
+    }
+}
+
+
+/* ============ MOBİL (≤575.98px) ============ */
+@media (max-width: 575.98px) {
+    ._navbar {
+        display: none;
+    }
+    .responsive-navbar {
+        display: block;
+    }
+
+    /* BANNER - Mobilde kart videonun altında, tam genişlik */
+    .box-banner {
+        min-height: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .carousel-video {
+        width: 100%;
+        max-height: 35vh;
+        object-fit: cover;
+    }
+    .slider-card {
+        width: 92%;
+        max-width: 100%;
+        position: relative;
+        right: auto;
+        left: 4%;
+        top: auto;
+        bottom: auto;
+        transform: none;
+        margin: -3rem auto 1rem auto;
+        padding: 1rem;
+        z-index: 10;
+        background-color: rgba(255, 255, 255, 0.96);
+    }
+    .slider-card-title {
+        font-size: 1.05rem;
+        margin-bottom: 0.5rem;
+        color: var(--color3);
+        opacity: 1 !important;
+    }
+    .slider-card-title-box {
+        opacity: 1 !important;
+    }
+    .slider-card-text {
+        margin-left: 0;
+        font-size: 0.8rem;
+        opacity: 1 !important;
+        display: none;
+    }
+    .slider-card-btn {
+        background-color: var(--color1);
+        position: relative;
+        left: 0;
+        top: 0;
+        padding: 0.4rem 0.9rem;
+        color: white !important;
+        border-radius: 5px;
+        font-size: 0.85rem;
+        display: inline-block;
+    }
+
+    /* KATEGORİ BAŞLIKLARI */
+    .home-show-room-title span {
+        text-transform: uppercase;
+        background-color: var(--color1);
+        padding: 0.3rem 0.5rem;
+        border-radius: 5px;
+        color: white;
+        font-weight: 600 !important;
+        line-height: 1.4;
+        letter-spacing: 1px;
+        margin-right: 0.5rem;
+        display: inline-block;
+    }
+    .home-show-room-title {
+        text-align: center;
+        letter-spacing: 0.8px;
+        font-size: 1.2rem;
+        width: 100% !important;
+        line-height: 1.6;
+    }
+    .home-show-room {
+        width: 95% !important;
+    }
+
+    /* HİZMETLER (info section) */
+    .info {
+        width: 92%;
+    }
+    .info-title {
+        font-size: 0.95rem;
+        line-height: 1.4;
+    }
+    .info-title i {
+        font-size: 1.4rem;
+    }
+    .info-description {
+        font-size: 0.85rem;
+    }
+
+    /* TORNA SECTION */
+    .torna {
+        display: none;
+    }
+
+    /* İLETİŞİM */
+    .contact {
+        width: 95% !important;
+        height: auto !important;
+    }
+    .contact-box {
+        height: 280px !important;
+    }
+    .contact-box-box {
+        height: auto !important;
+    }
+    .contact-item {
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .cont {
+        height: auto !important;
+    }
+    .contact-item-card {
+        padding: 1.5rem 1rem !important;
+    }
+
+    /* HAKKIMIZDA */
+    .about {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        transform: none !important;
+        margin-top: 2rem !important;
+        width: 92% !important;
+    }
+    .about-brand-title {
+        width: 80% !important;
+        font-size: 1.5rem !important;
+        letter-spacing: 4px !important;
+    }
+
+    /* ÜRÜN DETAY */
+    .modal-tech {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 90%;
+        height: auto;
+        transform: translate(-50%, -50%);
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 12px;
+    }
+    .product-detail {
+        width: 95% !important;
+    }
+    .product-show-room {
+        width: 100% !important;
+    }
+
+    /* MENÜ */
+    .menu-item a {
+        font-size: 1.1rem !important;
+    }
+}
